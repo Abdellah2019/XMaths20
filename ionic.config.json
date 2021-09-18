@@ -1,0 +1,7 @@
+{
+  "name": "XMaths20",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
