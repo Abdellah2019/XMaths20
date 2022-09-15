@@ -1,0 +1,34 @@
+ion-toolbar{
+    --background:rgb(33,66,99);
+   }
+ion-content{
+       --background: white;
+}
+*{
+color:black;
+}
+
+.p1{
+    font-weight:600;
+    font-size :25px;
+    padding: 0px 0px 0px 50px;
+    padding-top:12px;
+}
+.p2{
+    font-weight:600;
+    font-size :24px;
+    padding-top:12px;
+
+}
+.btn{
+    padding-left:10px;
+}
+.p3{
+    font-weight:600;
+    font-size :25px;
+}
+ion-input{
+    font-weight:60;
+    font-size :24px;
+    padding-top:-20px;
+}

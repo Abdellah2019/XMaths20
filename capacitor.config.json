@@ -1,6 +1,6 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "XMaths20",
-	"webDir": "www",
-	"bundledWebRuntime": false
+  "appId": "com.boson.xmaths20",
+  "appName": "XMaths20",
+  "webDir": "www",
+  "bundledWebRuntime": false
 }

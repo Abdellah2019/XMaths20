@@ -1,0 +1,156 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Arithmetic</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<div class="pgcd">
+  <ion-label>
+    <ion-grid>
+      <label style="color:black">this function allows to calculate the greatest common divisor</label>
+      <ion-row size="12">
+        
+        <ion-col size="5">
+          <br>
+          <br>
+          <p>PGCD (
+        </p>
+
+        </ion-col>
+        <ion-col size="2">
+          <br>
+          <br>
+          <ion-input placeholder="Enter" [(ngModel)]="a"></ion-input>
+        </ion-col>
+        
+        <ion-col size="1">
+          <br>
+          <br>
+          <p>,</p>
+        </ion-col>
+        <ion-col size="3">
+          <br>
+          <br>
+          <ion-input type="number"placeholder="Enter " [(ngModel)]="b"></ion-input>
+        </ion-col>
+        <ion-col size="1">
+          <br>
+          <br>
+          <p>)</p>
+        </ion-col>
+
+      </ion-row >
+      <ion-row size="12">
+        <ion-col size="4">
+      <ion-button color="primary" (click)="rpgcd=pgcd(a,b);clickpgcd=!clickpgcd">
+         calculate
+      </ion-button>
+    </ion-col>
+    </ion-row>
+
+    <ion-row size="12">
+      <br>
+      <br>
+      <br>
+      <ion-col size="9">
+        <p class="p1" *ngIf="this.clickpgcd==true">result:{{rpgcd}}</p>
+        </ion-col>
+        </ion-row>
+        <label style="color:black">this function allows to calculate the least common multiple</label>
+        <ion-row size="12">
+          <ion-col size="5">
+            
+            <br>
+            <br>
+  
+            <p>PPCM (
+          </p>
+  
+          </ion-col>
+          <ion-col size="2">
+            <br>
+            <br>
+            <ion-input placeholder="Enter" [(ngModel)]="a1"></ion-input>
+          </ion-col>
+          
+          <ion-col size="1">
+            <br>
+            <br>
+            <p>,</p>
+          </ion-col>
+          <ion-col size="3">
+            <br>
+            <br>
+            <ion-input type="number"placeholder="Enter " [(ngModel)]="b1"></ion-input>
+          </ion-col>
+          <ion-col size="1">
+            <br>
+            <br>
+            <p>)</p>
+          </ion-col>
+        </ion-row >
+        <ion-row size="12">
+          <ion-col size="4">
+        <ion-button color="primary" (click)="rppcm=ppcm(a1,b1);clickppcm=!clickppcm">
+          calculate
+        </ion-button>
+      </ion-col>
+      </ion-row>
+      <ion-row size="12">
+        <br>
+        <br>
+        <br>
+        <ion-col size="9">
+          <p class="p2" *ngIf="this.clickppcm==true">result:{{rppcm}}</p>
+          </ion-col>
+          </ion-row>
+          <label style="color:black">this function determines if a number is prime</label>
+          <ion-row size="12">
+            <ion-col size="5">
+             
+              
+    
+              <p>PRIME (
+            </p>
+            </ion-col>
+            <ion-col size="3">
+              
+              
+              <ion-input placeholder="Enter " [(ngModel)]="a2"></ion-input>
+            </ion-col>
+            <ion-col size="1">
+              
+              
+              <p>)</p>
+            </ion-col>
+            </ion-row>
+
+            <ion-row size="12">
+              <ion-col size="4">
+            <ion-button color="primary" (click)="rprime=isprime(a2);clickprime=!clickprime">
+              calculate
+            </ion-button>
+          </ion-col>
+          </ion-row>
+          <ion-row size="12">
+            <br>
+            <br>
+            <br>
+            <ion-col size="9">
+              <p class="p3" *ngIf="clickprime==true">result:{{rprime}}</p>
+              </ion-col>
+              </ion-row>
+          
+          
+    </ion-grid>
+    
+  </ion-label>
+
+</div>
+
+<ion-content>
+
+</ion-content>
+

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <h1 class="welcome">Welcome to XMaths20</h1>
+  
+  
+
+  
+    <ion-card>
+      <ion-img src="../../assets/mathsformula.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>
+        
+        {{this.dataN.year}}
+        {{this.dataN.date}}
+        
+          
+        
+        
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      
+      <ion-label>{{this.dataN.text}}</ion-label>
+    </ion-card-content>
+
+    <div class="button">
+     <ion-button class="button" color="primary" (click)="showBanner() ">generate info</ion-button>
+    </div>
+
+  </ion-card>
+
+  
+
+</ion-content>

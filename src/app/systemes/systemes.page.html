@@ -1,0 +1,181 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Systems of Equations</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+
+      </ion-col>
+      <ion-col class="ca" size="2">
+        <ion-input class="ina" placeholder="_" [(ngModel)]="a"></ion-input>
+      </ion-col>
+      <ion-col   size="1.5">
+        
+       <p class="pa">X+</p>
+      </ion-col>
+      <ion-col class="cb" size="2">
+        <ion-input  class="inb" placeholder="_" [(ngModel)]="b"></ion-input>
+      </ion-col>
+      <ion-col size="2">
+        <p> Y =</p>
+      </ion-col>
+      <ion-col class="ce" size="2">
+        <ion-input  class="ine" placeholder="_" [(ngModel)]="e"></ion-input>
+        </ion-col>
+
+    </ion-row>
+
+    <ion-row size="12">
+      <ion-col size="2">
+
+      </ion-col>
+      <ion-col size="2">
+        
+        <ion-input  class="inc" placeholder="_" [(ngModel)]="c"></ion-input>
+      </ion-col>
+      <ion-col size="1.5">
+        
+       <p>X+</p>
+      </ion-col>
+      <ion-col size="2">
+        <ion-input  class="ind" placeholder="_" [(ngModel)]="d"></ion-input>
+      </ion-col>
+      <ion-col size="2">
+        <p>Y =</p>
+      </ion-col>
+      <ion-col size="2">
+        <ion-input class="inf" placeholder="_" [(ngModel)]="f"></ion-input>
+        </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <ion-button color="primary" (click)="solution1();this.click1=!this.click1">
+          calculate  
+        </ion-button>
+
+      </ion-col>
+      
+    </ion-row>
+    <ion-row>
+      
+      <p  class="p1" *ngIf="this.click1==true">result:[{{this.sx1}};{{this.sy1}}]</p>
+      
+      
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="2">
+
+      </ion-col>
+      <ion-col size="1">
+        
+        <ion-input class="ina1" placeholder="_" [(ngModel)]="a1"></ion-input>
+      </ion-col>
+      <ion-col size="1.5">
+        
+       <p>X+</p>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input class="inb1" placeholder="_" [(ngModel)]="b1"></ion-input>
+      </ion-col>
+      <ion-col size="1.5">
+        <p>Y+</p>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input class="inc1" placeholder="_" [(ngModel)]="c1"></ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <p>Z =</p>
+
+        </ion-col>
+        <ion-col size="2">
+          <ion-input class="ind1" placeholder="_" [(ngModel)]="d1"></ion-input>
+        </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="2">
+
+      </ion-col>
+      <ion-col size="1">
+        
+        <ion-input class="ina2" placeholder="_" [(ngModel)]="a2"></ion-input>
+      </ion-col>
+      <ion-col size="1.5">
+        
+       <p>X+</p>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input class="inb2" placeholder="_" [(ngModel)]="b2"></ion-input>
+      </ion-col>
+      <ion-col size="1.5">
+        <p>Y+</p>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input class="inc2" placeholder="_" [(ngModel)]="c2"></ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <p>Z =</p>
+
+        </ion-col>
+        <ion-col size="2">
+          <ion-input class="ind2" placeholder="_" [(ngModel)]="d2"></ion-input>
+        </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col size="2">
+
+      </ion-col>
+      <ion-col size="1">
+        
+        <ion-input class="ina3" placeholder="_" [(ngModel)]="a3"></ion-input>
+      </ion-col>
+      <ion-col size="1.5">
+        
+       <p>X+</p>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input class="inb3" placeholder="_" [(ngModel)]="b3"></ion-input>
+      </ion-col>
+      <ion-col size="1.5">
+        <p>Y+</p>
+      </ion-col>
+      <ion-col size="1">
+        <ion-input  class="inc3" placeholder="_" [(ngModel)]="c3"></ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <p>Z =</p>
+
+        </ion-col>
+        <ion-col size="2">
+          <ion-input class="ind3" placeholder="_" [(ngModel)]="d3"></ion-input>
+        </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <ion-button color="primary" (click)="solution2();this.click2=!this.click2">
+          calculate  
+        </ion-button>
+
+      </ion-col>
+      
+    </ion-row>
+    <ion-row>
+      <p  class="p2" *ngIf="this.click2==true">result:[{{this.sx2}};{{this.sy2}};{{this.sz2}}]</p>
+    </ion-row>
+
+  </ion-grid>
+
+
+</ion-content>

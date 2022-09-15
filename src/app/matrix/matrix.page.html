@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Determinant 3x3</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="matrix3">
+    <ion-grid>
+      <ion-row>
+
+        <br>
+        <ion-col size="3">
+
+        </ion-col>
+        <ion-col size="2">
+          <ion-input class="ina1" placeholder="a1" [(ngModel)]="a1"></ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <ion-input placeholder="a2" [(ngModel)]="a2"></ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <ion-input placeholder="a3" [(ngModel)]="a3"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="3">
+
+        </ion-col>
+        <ion-col size="2">
+          <ion-input placeholder="b1" [(ngModel)]="b1"></ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <ion-input placeholder="b2" [(ngModel)]="b2"></ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <ion-input placeholder="b3" [(ngModel)]="b3"></ion-input>
+        </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="3">
+
+          </ion-col>
+        <ion-col size="2">
+          
+          <ion-input placeholder="c1" [(ngModel)]="c1"></ion-input>
+        </ion-col>
+
+        <ion-col size="2">
+          <ion-input placeholder="c2" [(ngModel)]="c2"></ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <ion-input placeholder="c3" [(ngModel)]="c3"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row size="12">
+        <br>
+        <ion-col size="2">
+
+        </ion-col>
+        <ion-col size="10h">
+      <ion-button color="primary" (click)="det3=detM3();clickd=!clickd">
+        calculate  
+      </ion-button>
+    </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="9">
+      <p *ngIf="clickd==true">result:{{det3}}</p>
+    </ion-col>
+    </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>

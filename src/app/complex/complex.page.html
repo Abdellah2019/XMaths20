@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>complex</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+  <div class="complex">
+    <ion-label>
+      <ion-grid>
+        <ion-row size="12">
+          <ion-col size="5">
+            <br>
+            <br>
+  
+            <p class="p1">Z=
+          </p>
+  
+          </ion-col>
+          <ion-col size="2">
+            <br>
+            <br>
+            <ion-input placeholder="_" [(ngModel)]="a"></ion-input>
+          </ion-col>
+          
+          <ion-col size="2">
+            <br>
+            <br>
+            <p class="p2">+i</p>
+            
+          </ion-col>
+          <ion-col size="2">
+            <br>
+            <br>
+            
+            <ion-input placeholder="_" [(ngModel)]="b"></ion-input>
+            
+          </ion-col>
+          </ion-row>
+          <ion-row size="12">
+            <ion-col size="3">
+            </ion-col>
+          
+          <ion-button class="btn" color="primary" (click)="m=module() ; argument() " >
+            result
+          </ion-button>
+        
+        
+        </ion-row>
+        <ion-row size="12">
+          <br>
+          <br>
+          <br>
+          <ion-col size="4">
+            <p class="p3" >|Z|={{m}}</p>
+            </ion-col>
+            </ion-row>
+  
+            <ion-row size="12">
+              <br>
+              <br>
+              <br>
+              <ion-col size="9">
+              <p class="p3">arg in degree:{{this.cr}}</p>
+                </ion-col>
+                </ion-row>
+                <ion-row size="12">
+                  <br>
+                  <br>
+                  <br>
+                  <ion-col size="9">
+                  <p class="p3">arg in radian:{{this.cd}}</p>
+                    </ion-col>
+                    </ion-row>
+  
+      </ion-grid>
+          </ion-label>
+          </div>
+
+<ion-content>
+
+</ion-content>
+
+
